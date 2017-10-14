@@ -1,0 +1,30 @@
+
+Xvnc Free Edition 4.1.1 - built Jul 31 2015 19:10:31
+Copyright (C) 2002-2005 RealVNC Ltd.
+See http://www.realvnc.com for information on VNC.
+Underlying X server release 40300000, The XFree86 Project, Inc
+
+
+Thu Oct 12 16:11:33 2017
+ vncext:      VNC extension running!
+ vncext:      Listening for VNC connections on port 5901
+ vncext:      created VNC server for screen 0
+error opening security policy file /etc/X11/xserver/SecurityPolicy
+Could not init font path element /usr/X11R6/lib/X11/fonts/Type1/, removing from list!
+Could not init font path element /usr/X11R6/lib/X11/fonts/Speedo/, removing from list!
+Could not init font path element /usr/X11R6/lib/X11/fonts/misc/, removing from list!
+Could not init font path element /usr/X11R6/lib/X11/fonts/75dpi/, removing from list!
+Could not init font path element /usr/X11R6/lib/X11/fonts/100dpi/, removing from list!
+Could not init font path element /usr/share/fonts/X11/Type1/, removing from list!
+Could not init font path element /usr/share/fonts/X11/75dpi/, removing from list!
+Could not init font path element /usr/share/fonts/X11/100dpi/, removing from list!
+Option "--login" is no longer supported in this version of gnome-terminal; you might want to create a profile with the desired setting, and use the new '--profile' option
+Window manager warning: Log level 32: could not find XKB extension.
+
+(gnome-terminal:2048): GLib-GIO-CRITICAL **: g_settings_get: the format string may not contain '&' (key 'monospace-font-name' from schema 'org.gnome.desktop.interface'). This call will probably stop working with a future version of glib.
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":1"
+      after 148 requests (148 known processed) with 0 events remaining.
+Window manager warning: Fatal IO error 11 (Resource temporarily unavailable) on display ':1'.
+
+(gnome-terminal:2048): Gdk-WARNING **: gnome-terminal: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.
+

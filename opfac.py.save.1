@@ -1,0 +1,32 @@
+import csv
+import gensim
+import os
+import collections
+import smart_open
+import random
+def read_corpus(fname):
+    with open(fname, 'rb') as csvfile:
+        spamreader = csv.reader(csvfile, delimiter='|', quotechar='|')
+        for row in spamreader:
+            #print row
+            # For training data, add tags
+            yield gensim.models.doc2vec.TaggedDocument(gensim.utils.simple_preprocess(row), [1])
+if __name__=='__main__':
+    op_file = '/home/sukhad/Downloads/event.csv'
+    
+    #fac_file =''
+    #X = []
+    #y = []
+    #with open(op_file, 'rb') as csvfile:
+        #spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
+        #for row in spamreader:
+    #model = Doc2Vec(alpha=0.025, min_alpha=0.025)  # use fixed learning rate
+    #model.build_vocab(sentences)
+    #for epoch in range(10):
+     #   model.train(sentences)
+     #   model.alpha -= 0.002  # decrease the learning rate
+     #   model.min_alpha = model.alpha  # fix the learning rate, no decay
+    #model = Doc2Vec(min_count=1, window=10, size=100, sample=1e-4, negative=5, workers=8)
+    #model.build_vocab(sentences.to_array())
+    #for epoch in range(10):
+     #   model.train(sentences.sentences_perm())
